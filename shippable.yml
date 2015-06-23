@@ -5,11 +5,6 @@ build_image: shippableimages/ubuntu1404_python
 notifications:
     email: false
 
-env:
-  global:
-    - SLACK_ORG=godai PROJECT=gondwana
-    - secure: fytseefy2J/KdNiievTo1a7R64cprvBr8wm8YkwKsetLJCZjleV0GXec1ZyaeHYd7t17VvCHP44c7uQUAGJoODKv/VvJ20LQFGArIc65tGq5iToLY0N3kjBA+Z3KMWvSr+EM8tFCUeeSJEK8Iuv3RyL+b0ml0br2zPy+xY39D9pYi7nlLvCLh70n0JK7Vb2+HSEgm5SFBl3R2ILkNzzKCUr772KtZbsHDdDn/5tcKUiY2wptweTf7qImHCUyfikXNlqUH24XWIsv/y+X/zA7CihyNL3SLj0KsBjHMcPEu0AkUqCM4vdkmccivCP2vq3E8DnvoPwHtGj1TE1G6OAp0w==
-
 before_install:
     - sudo apt-get update
     - sudo apt-get install clang-3.5 libc++-dev wget -y
