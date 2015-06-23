@@ -1,0 +1,3 @@
+[submodule "submodule/sqlite3"]
+	path = submodule/sqlite3
+	url = git@github.com:ikeda1916/sqlite3.git
