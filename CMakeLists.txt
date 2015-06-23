@@ -3,7 +3,10 @@ project(shippable-test)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
-file(GLOB_RECURSE source_files *.cxx)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-add_executable(shippable-test ${source_files})
+include(sqlite3.cmake)
+
+add_subdirectory(main)
+
 
