@@ -8,8 +8,10 @@ notifications:
 before_install:
     - sudo apt-get update
     - sudo apt-get install clang-3.5 libc++-dev wget -y
+    - sudo apt-get install cmake -y
 
 script:
+    - cmake --version
     - clang++-3.5 --version;
       clang++-3.5 -std=c++14 -stdlib=libc++ main.cxx -o main;
       ./main
